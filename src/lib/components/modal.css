@@ -1,0 +1,40 @@
+/* Modal */
+.modal {
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.modalContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; */
+    background-color: rgba(0,0,0,.35);
+    opacity: 0.7;
+    /* visibility: hidden; */
+    transition: all .2s ease;
+    z-index:2;
+}
+
+
+/* Close */
+.modal-close {
+    font-size: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transition: 0.5s;
+}
+.modal-close:hover {
+    cursor: pointer;
+}
