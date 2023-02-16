@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# react-modal-by-vyplasiln
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> modal P14 openclassrooms
 
-## Available Scripts
+[![NPM](https://img.shields.io/npm/v/react-modal-by-vyplasiln.svg)](https://www.npmjs.com/package/react-modal-by-vyplasiln) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-In the project directory, you can run:
+## Install
 
-### `npm start`
+```bash
+npm install --save react-modal-by-vyplasiln
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Example
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```jsx
+import React, { Component } from 'react'
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+import { Modal } from 'react-modal-by-vyplasiln'
+import 'react-modal-by-vyplasiln/dist/index.css'
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+const App = () => { 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  const [showModal, setShowModal] = useState(false)
+  const Toggle = () => setShowModal(!showModal)
 
-### `npm run eject`
+  // your modal style 
+  const modal_styles = {
+    "backgroundColor": "rgb(187 245 193)",   
+    "borderRadius": 10,
+    "boxShadow": "rgb(5 60 9) 0px 0px 0px 2px",
+    "color": "rgb(5 72 4)",
+    "fontSize": 18,
+    "height": "fit-content",
+    "padding": "20px 50px",
+    "width": "fit-content"
+  }
+  
+  return (
+    <div>
+      <button onClick={() => Toggle()}>
+      Clic to open Modal
+      </button>
+  
+      {/*  modal parameters */}
+      <Modal 
+        id="modalEmployeeCreated"
+        showModal={showModal}
+        closeModal={() => setShowModal(false)}
+        modal_styles={modal_styles}
+        message="Employee Created !"
+      />
+    </div>
+  )
+}
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+export default App
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
