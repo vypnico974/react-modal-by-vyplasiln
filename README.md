@@ -4,17 +4,18 @@
 
 [![NPM](https://img.shields.io/npm/v/react-modal-by-vyplasiln.svg)](https://www.npmjs.com/package/react-modal-by-vyplasiln) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## About
+
+A simple modal React component.
+Keep the default theme or chose your modal style.
+
 ## Install
 
 ```bash
 npm install --save react-modal-by-vyplasiln
 ```
 
-## Usage
-
-### Example
-
-
+## Usage -example : App.jsx
 
 ```jsx
 import React, { Component } from 'react'
@@ -24,10 +25,12 @@ import 'react-modal-by-vyplasiln/dist/index.css'
 
 const App = () => { 
 
+  // needed to show/hide the modal
   const [showModal, setShowModal] = useState(false)
   const Toggle = () => setShowModal(!showModal)
 
-  // your modal style 
+  // your modal style
+  // if modal_styles not defined, default modal style
   const modal_styles = {
     "backgroundColor": "rgb(187 245 193)",   
     "borderRadius": 10,
@@ -45,7 +48,8 @@ const App = () => {
       Clic to open Modal
       </button>
   
-      {/*  modal parameters */}
+      {/*  modal parameters 
+      showModal and closeModal are required*/}
       <Modal 
         id="modalEmployeeCreated"
         showModal={showModal}
@@ -56,7 +60,8 @@ const App = () => {
     </div>
   )
 }
-
 export default App
 
+## License
 
+MIT © [vypnico974](https://github.com/vypnico974)
