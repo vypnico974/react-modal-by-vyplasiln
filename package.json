@@ -1,6 +1,8 @@
 {
   "name": "react-modal-by-vyplasiln",
-  "version": "0.1.0",
+  "version": "1.0.9",
+  "description": "modal P14 openclassrooms",
+  "author": "vypnico974",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -36,6 +38,12 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
+    ],
+    "keywords": [
+      "react",
+      "modal",
+      "customizable styles"
+    ],
+    "homepage": "https://github.com/vypnico974/react-modal-by-vyplasiln"
   }
 }

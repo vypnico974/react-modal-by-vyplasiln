@@ -9,6 +9,15 @@
 A simple modal React component.
 Keep the default theme or chose your modal style.
 
+## Resource
+
+[Creating an npm package from my REACT Component](https://www.elitmus.com/blog/technology/creating-an-npm-package-from-my-react-component/)
+
+## License
+
+MIT © [vypnico974](https://github.com/vypnico974)
+
+
 ## Install
 
 ```bash
@@ -18,10 +27,10 @@ npm install --save react-modal-by-vyplasiln
 ## Usage -example : App.jsx
 
 ```jsx
-import React, { Component } from 'react'
-
+/* react  */
+import React, { useState } from 'react'
+/* modal component   */
 import { Modal } from 'react-modal-by-vyplasiln'
-import 'react-modal-by-vyplasiln/dist/index.css'
 
 const App = () => { 
 
@@ -62,6 +71,18 @@ const App = () => {
 }
 export default App
 
-## License
 
-MIT © [vypnico974](https://github.com/vypnico974)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
