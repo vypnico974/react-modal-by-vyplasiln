@@ -9,7 +9,7 @@
 A simple modal React component.
 Keep the default theme or chose your modal style.
 
-Exemple : [lien](https://vypnico974.github.io/react-modal-by-vyplasiln/)
+Example : [link](https://vypnico974.github.io/react-modal-by-vyplasiln/)
 
 ## Resource
 
