@@ -4,6 +4,7 @@
   "description": "modal P14 openclassrooms",
   "author": "vypnico974",
   "private": true,
+  "homepage": "https://vypnico974.github.io/react-modal-by-vyplasiln/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -20,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +48,8 @@
       "customizable styles"
     ],
     "homepage": "https://github.com/vypnico974/react-modal-by-vyplasiln"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

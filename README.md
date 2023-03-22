@@ -9,6 +9,8 @@
 A simple modal React component.
 Keep the default theme or chose your modal style.
 
+Exemple : [lien](https://vypnico974.github.io/react-modal-by-vyplasiln/)
+
 ## Resource
 
 [Creating an npm package from my REACT Component](https://www.elitmus.com/blog/technology/creating-an-npm-package-from-my-react-component/)

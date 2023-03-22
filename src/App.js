@@ -1,13 +1,24 @@
-import { useState } from "react"
+/* react  */
+import React, { useState } from 'react'
+/* modal component   */
 import Modal from './lib/components/Modal'
 
 
-
+/**
+ * @function App
+ * @export
+ * @description component for render the modal 
+ * @return {HTMLElement} component generated HTML
+ */
 function App() {
  
+    // needed to show/hide the modal
     const [showModal, setShowModal] = useState(false)
     const Toggle = () => setShowModal(!showModal)
 
+
+    // your modal style
+    // if modal_styles not defined, default modal style
     const modal_styles = {
       "backgroundColor": "rgb(187 245 193)",   
       "borderRadius": 10,
@@ -25,6 +36,9 @@ function App() {
         Clic to open Modal
         </button>
     
+        
+      {/*  modal parameters 
+      showModal and closeModal are required*/}
         <Modal 
           id="modalEmployeeCreated"
           showModal={showModal}
@@ -36,4 +50,4 @@ function App() {
     )
 }
 
-export default App;
+export default App
